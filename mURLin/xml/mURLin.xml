@@ -1,0 +1,82 @@
+
+<urls>
+        <name>Get Monitored URLs</name>
+        <script_path>|path_php_binary| -q |path_cacti|/plugins/mURLin/scripts/query_sites.php</script_path>
+        <arg_prepend>|host_id|</arg_prepend>
+        <arg_num_indexes>count</arg_num_indexes>
+        <arg_index>index</arg_index>
+        <arg_query>query</arg_query>
+        <arg_get>get</arg_get>
+        
+        <index_order>id</index_order>
+        <index_order_type>numeric</index_order_type>
+
+        <output_delimeter>!!</output_delimeter>
+        <fields>
+                <id>
+                        <name>id</name>
+                        <direction>input</direction>
+                        <query_name>id</query_name>
+                </id>
+                <url>
+                        <name>Site</name>
+                        <direction>input</direction>
+                        <query_name>sites</query_name>
+                </url>
+                <text>
+                        <name>Text to Match</name>
+                        <direction>input</direction>
+                        <query_name>text</query_name>
+                </text>
+                <values>
+                        <name>values</name>
+                        <direction>output</direction>
+                        <query_name>values</query_name>
+                </values>
+                <http_code>
+                        <name>http_code</name>
+                        <direction>output</direction>
+                        <query_name>http_code</query_name>
+                </http_code>
+                <downloadsize>
+                        <name>downloadsize</name>
+                        <direction>output</direction>
+                        <query_name>downloadsize</query_name>
+                </downloadsize>
+                <redirect_count>
+                        <name>redirect_count</name>
+                        <direction>output</direction>
+                        <query_name>redirect_count</query_name>
+                </redirect_count>
+                <availability>
+                        <name>availability</name>
+                        <direction>output</direction>
+                        <query_name>availability</query_name>
+                </availability>
+                <namelookup_time>
+                        <name>namelookup_time</name>
+                        <direction>output</direction>
+                        <query_name>namelookup_time</query_name>
+                </namelookup_time>
+                <connect_time>
+                        <name>connect_time</name>
+                        <direction>output</direction>
+                        <query_name>connect_time</query_name>
+                </connect_time>
+		<pretransfer_time>
+                        <name>pretransfer_time</name>
+                        <direction>output</direction>
+                        <query_name>pretransfer_time</query_name>
+                </pretransfer_time>
+				<starttransfer_time>
+                        <name>starttransfer_time</name>
+                        <direction>output</direction>
+                        <query_name>starttransfer_time</query_name>
+                </starttransfer_time>
+		<redirect_time>
+                        <name>redirect_time</name>
+                        <direction>output</direction>
+                        <query_name>redirect_time</query_name>
+                </redirect_time>
+        </fields>
+</urls>

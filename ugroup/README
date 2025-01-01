@@ -1,0 +1,51 @@
+/*******************************************************************************
+
+    Author ......... The Cacti Group
+    Contact ........ 
+    Home Site ...... http://www.cacti.net
+    Program ........ Cacti User Group Plugin
+    Version ........ 0.2
+    Purpose ........ Extends Cacti to Support Multiple User Groups
+
+*******************************************************************************/
+
+
+----[ Purpose
+
+    There is currently no support for User Groups in Cacti.  This plugin
+    corrects that.
+
+----[ Features
+
+    Allow administrators to create Multipe User Groups.
+
+----[ Prerequisites
+
+    Cacti PIA 2.8++, Cacti 0.8.7g++
+
+----[ Installation
+
+    Simply place in the plugins directory and install like any other PIA 2.x
+    plugin.
+
+----[ Additional Help?
+
+    If you need additional help, please goto forums.cacti.net.
+
+----[ Possible Bugs?
+
+    If you figure out this problem, let me know!!!
+
+----[ Future Changes
+
+    Got any ideas or complaints, see the forums or a phychologist
+
+----[ Changelog
+    --- 0.2 ---
+    fix: Tree Display not working as expected
+    fix: Oddities in Filters and Checkboxes
+    fix: Disabling, Enabling, Deleting groups does not work as expected
+    feature: Adding patches for 0.8.7i
+
+    --- 0.1 ---
+    Initial release
